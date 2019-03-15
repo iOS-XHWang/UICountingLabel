@@ -18,6 +18,7 @@ typedef NSAttributedString* (^UICountingLabelAttributedFormatBlock)(CGFloat valu
 @property (nonatomic, strong) NSString *format;
 @property (nonatomic, assign) UILabelCountingMethod method;
 @property (nonatomic, assign) NSTimeInterval animationDuration;
+@property (nonatomic, strong) NSString *positiveFormat;/**< 新增属性：如果需要浮点数千分位分隔符,必须使用 @“###,##0.00” 控制样式 */
 
 @property (nonatomic, copy) UICountingLabelFormatBlock formatBlock;
 @property (nonatomic, copy) UICountingLabelAttributedFormatBlock attributedFormatBlock;
